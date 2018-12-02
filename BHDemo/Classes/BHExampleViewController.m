@@ -33,15 +33,15 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 	
 	// 无格式, 四舍五入
 	NSString *roundNoFloatsString = [NSNumberFormatter roundNoStyleWithDoubleValue:doubleValue scale:2];
-	NSLog(@"无格式, 四舍五入-> %@", roundNoFloatsString); // 输出: 无格式, 四舍五入-> 12346789
+	NSLog(@"无格式, 四舍五入-> %@", roundNoFloatsString); // 输出: 无格式, 四舍五入-> 12346789.44
 
 	// 向上取整(进)
 	NSString *ceilingNoFloatsString = [NSNumberFormatter ceilingNoStyleWithDoubleValue:doubleValue scale:3];
-	NSLog(@"无格式, 向上取值-> %@", ceilingNoFloatsString); // 输出: 无格式, 向上取值-> 12346790
+	NSLog(@"无格式, 向上取值-> %@", ceilingNoFloatsString); // 输出: 无格式, 向上取值-> 12346789.445
 
 	// 向下取整(舍)
 	NSString *floorNoFloatsString = [NSNumberFormatter floorNoStyleWithDoubleValue:doubleValue scale:2];
-	NSLog(@"无格式, 向下取值-> %@", floorNoFloatsString); // 输出: 无格式, 向下取值-> 12346789
+	NSLog(@"无格式, 向下取值-> %@", floorNoFloatsString); // 输出: 无格式, 向下取值-> 12346789.44
 
 	
 	

@@ -43,6 +43,8 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 	NSString *floorNoFloatsString = [NSNumberFormatter floorNoStyleWithDoubleValue:doubleValue scale:2];
 	NSLog(@"无格式, 向下取值-> %@", floorNoFloatsString); // 输出: 无格式, 向下取值-> 12346789
 
+	
+	
 	// 逗号间隔, 保留`scale`位小数, 四舍五入
 	NSString *commaSeparatedString = [NSNumberFormatter roundCommaSeparateWithDoubleValue:doubleValue scale:2];
 	NSLog(@"逗号分割-> %@", commaSeparatedString); // 输出: 逗号分割-> 12,346,789.44
@@ -55,6 +57,8 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 	NSString *floorCommaSeparatedString = [NSNumberFormatter floorCommaSeparateWithDoubleValue:doubleValue scale:3];
 	NSLog(@"逗号分割, 向下取值-> %@", floorCommaSeparatedString); // 输出: 逗号分割, 向下取值-> 12,346,789.444
 	
+	
+	
 	// $/¥前缀, 逗号间隔, 保留`scale`位小数, 四舍五入
 	NSString *roundCurrencyCommaSeparateString = [NSNumberFormatter roundCurrencyCommaSeparateWithDoubleValue:doubleValue scale:2];
 	NSLog(@"$/¥前缀, 逗号分割, 向下取值-> %@", roundCurrencyCommaSeparateString); // 输出: $/¥前缀, 逗号分割, 向下取值-> $12,346,789.44
@@ -66,6 +70,8 @@ static NSString *const DEMO_VIEWS_STORYBOARD_NAME = @"DemoViews";
 	// $/¥前缀, 逗号间隔, 保留`scale`位小数, 向下取值 (舍)
 	NSString *floorCurrencyCommaSeparateString = [NSNumberFormatter floorCurrencyCommaSeparateWithDoubleValue:doubleValue scale:2];
 	NSLog(@"$/¥前缀, 逗号分割, 向下取值-> %@", floorCurrencyCommaSeparateString); // 输出: $/¥前缀, 逗号分割, 向下取值-> $12,346,789.44
+	
+	
 	
 	// %后缀, 逗号间隔, 保留`scale`位小数, 四舍五入
 	NSString *roundPercentCommaSeparateString = [NSNumberFormatter roundPercentCommaSeparateWithDoubleValue:doubleValue scale:1];
